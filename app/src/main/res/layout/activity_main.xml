@@ -6,13 +6,61 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/response"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:foreground="@android:color/tertiary_text_light"
+            android:text="0"
+            android:textColor="@color/purple_500"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:ems="10"
+            android:hint="Escribe un número"
+            android:inputType="number"
+            android:textColor="@color/teal_700" />
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:ems="10"
+            android:hint="Escribe un número"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/bMult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplicación" />
+
+        <Button
+            android:id="@+id/bSust"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resta" />
+
+        <Button
+            android:id="@+id/bSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suma" />
+
+        <Button
+            android:id="@+id/BDivi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="División" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
