@@ -15,7 +15,6 @@
             android:id="@+id/response"
             android:layout_width="match_parent"
             android:layout_height="170dp"
-            android:foreground="@android:color/tertiary_text_light"
             android:text="0"
             android:textColor="@color/purple_500"
             android:textSize="30sp" />
@@ -38,10 +37,10 @@
             android:inputType="number" />
 
         <Button
-            android:id="@+id/bMult"
+            android:id="@+id/bSum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Multiplicación" />
+            android:text="Suma" />
 
         <Button
             android:id="@+id/bSust"
@@ -50,10 +49,10 @@
             android:text="Resta" />
 
         <Button
-            android:id="@+id/bSum"
+            android:id="@+id/bMult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Suma" />
+            android:text="Multiplicación" />
 
         <Button
             android:id="@+id/BDivi"
